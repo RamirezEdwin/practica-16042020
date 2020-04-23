@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.edwinisaacclass1604.DAO.ProductoDao;
+import com.edwinisaacclass1604.DAO.ventaDao;
 import com.edwinisaacclass1604.model.Producto;
+import com.edwinisaacclass1604.model.TbVenta;
 import com.google.gson.Gson;
 
 /**
@@ -94,6 +96,23 @@ public class ServeleteControler extends HttpServlet {
 		    prd.eliminarDatos(pr);
 	   
 		}
+		else if (acction.equals("AGREGARVENTA")) {
+			
+			TbVenta tbv = new TbVenta();
+			ventaDao vdao = new ventaDao();
+			Producto prn = new Producto();
+			
+			prn.setId(Integer.parseInt(id));
+			tbv.setProducto(prn);
+			vdao.agregarDatos(tbv);
+		   
+		    
+		   
+	   
+		}
+		
+		
+		
 	    response.sendRedirect("index.jsp");
 	}
 

@@ -29,8 +29,8 @@
      <td>${item.cantidadProducto}</td>
      <td>${item.totalProducto}</td>
      <td><a href = "ServeleteControler?btn=ELIMINAR&Id=${item.id}" class = "btn btn-warning">ELIMINAR<a>
-     <a href = "fuciones.jsp?IdBus=${item.id}&Npr=${item.nombreProducto}&PrecioPr=${item.precioProducto}&CantidadPr=${item.cantidadProducto}&TotalPr=${item.totalProducto}" class = "btn btn-danger">ACTUALIZAR<a></td>
-     
+     <a href = "fuciones.jsp?IdBus=${item.id}&Npr=${item.nombreProducto}&PrecioPr=${item.precioProducto}&CantidadPr=${item.cantidadProducto}&TotalPr=${item.totalProducto}" class = "btn btn-danger">ACTUALIZAR<a>
+    <a href = "ServeleteControler?btn=AGREGARVENTA&Id=${item.id}" class = "btn btn-warning">AGREGAR VENTA<a>
      </tr>`
       }
         
